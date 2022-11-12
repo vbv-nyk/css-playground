@@ -16,3 +16,25 @@ table {
     /* Very common to collapse borders */
     border-collapse: collapse;
 }
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(146, 142, 137, 0.479);
+}
+
+/* Highlighting cell on hover */
+
+td:hover {
+    background-color: yellow;
+}
+
+/*highlighting table rows on hover*/
+
+tbody tr:hover {
+    background-color: yellow;
+}
+
+/* if we do set a background on table */
+
+tr:hover td {
+    background-color: aliceblue;
+}
