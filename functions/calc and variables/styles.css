@@ -1,0 +1,30 @@
+/* using variables with calc */
+:root {
+    --width: 100%;
+    --height: 300px;
+    --div-background: black;
+    --hue: 300;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Width is 100%, we're removing 30px from 100% and margin auto will use that space to center the div */
+.container {
+    width: calc(var(--width) - 30px);
+    height: var(--height);
+    background-color: var(--div-background);
+    margin: 0 auto;
+}
+
+/* hsl h is hue, s is saturation and l is lightness, 2 colors will always be different with - 180
+leave spaces between operands during calculation */
+.no-danger {
+    background-color: hsl(var(--hue), 100%, 50%);
+}
+
+.danger {
+    background-color: hsl(calc(var(--hue) - 180), 100%, 50%);
+}
