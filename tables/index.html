@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tables</title>
+</head>
+
+<body>
+    <table>
+        <!-- Semantics suggest that we use thead tbody and tfoot in the order -->
+        <thead>
+            <tr>
+                <th colspan="2" style="text-align: center;">Heading 1 And 2</th>
+                <th>Heading 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- Changing the width makes the text wrap -->
+                <td style="width: 100px;white-space: nowrap;">Cell Data 1 and making cell wrap to check default
+                    behavior, but setting whitespace behavior to nowrap makes it bust out of the width
+                </td>
+                <td>Cell Data 2</td>
+                <td>Cell Data 3</td>
+            </tr>
+            <tr>
+                <td>Cell Data 1</td>
+                <td>Cell Data 2</td>
+                <td>Cell Data 3</td>
+            </tr>
+            <tr>
+                <td>Cell Data 1</td>
+                <td>Cell Data 2</td>
+                <td>Cell Data 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- For long forms we can repeat the headers for ux -->
+            <tr>
+                <th colspan=" 2" style="text-align: center;">Heading 1 and 2</th>
+                <th>Heading 3</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <table>
+        <!-- Semantics suggest that we use thead tbody and tfoot in the order -->
+        <thead>
+            <tr>
+                <th colspan="2" style="text-align: center;">Heading 1 And 2</th>
+                <th>Heading 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- Changing the width makes the text wrap -->
+                <th>Cell Data 1 and making cell wrap to check default
+                    behavior, but setting whitespace behavior to nowrap makes it bust out of the width
+                </th>
+                <td>Cell Data 2</td>
+                <td>Cell Data 3</td>
+            </tr>
+            <tr>
+                <!-- The first cell in a table row can be a header in use cases such and a multiplication table -->
+                <th>Cell Data 1</th>
+                <td>Cell Data 2</td>
+                <td>Cell Data 3</td>
+            </tr>
+            <tr>
+                <th>Cell Data 1</th>
+                <td>Cell Data 2</td>
+                <td>Cell Data 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- For long forms we can repeat the headers for ux -->
+            <tr>
+                <th colspan=" 2" style="text-align: center;">Heading 1 and 2</th>
+                <th>Heading 3</th>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+td,
+th {
+    border: 1px solid rgb(41, 40, 40);
+    padding: 0.7rem;
+    text-align: left;
+    width: 200px;
+}
+
+table {
+    /* border-spacing: 10px; adjusting space between table cells*/
+    /* Very common to collapse borders */
+    border-collapse: collapse;
+}
